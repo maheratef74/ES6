@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 </title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            padding: 40px;
+            color: #1a1a1a;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .student-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .controls {
+            margin: 25px 0;
+            padding: 20px;
+            background: #e9ecef;
+            border-radius: 8px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ced4da;
+            width: 250px;
+        }
+
+        .results-card {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .grade-tag {
+            display: inline-block;
+            padding: 4px 8px;
+            margin: 2px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        .grade-excellent {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .grade-good {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .grade-vgood {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Student Performance Tracker</h1>
+
+        <h2>All Students (Initial Loop)</h2>
+        <div id="fullList"></div>
+
+        <div class="controls">
+            <label for="studentSelector">Select Student: </label>
+            <select id="studentSelector">
+                <option value="">-- Choose a Student --</option>
+            </select>
+        </div>
+
+        <div id="selectionResult" class="results-card">
+            <h3>Grades for <span id="selectedName"></span></h3>
+            <div id="gradesOutput"></div>
+        </div>
+    </div>
+
+    <script src="./task2.js"></script>
+</body>
+
+</html>
