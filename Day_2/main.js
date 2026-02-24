@@ -4,7 +4,7 @@ class Manager extends Employee {
     constructor(idValue, name, department, phone) {
         super(idValue, name, department, phone);
     }
-``
+
     showDepartment = () => {
         const message = `${this.name} is the manager of ${this.department} department`;
         console.log(message);
